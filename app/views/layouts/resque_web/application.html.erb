@@ -15,18 +15,21 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-      <%= image_tag "resque_web/lifebuoy.png", class: 'logo' %>
-      <%= link_to "Resque.", ResqueWeb::Engine.app.url_helpers.root_path, :class => "brand" %>
-      <div class="nav-collapse collapse">
-        <ul class="nav">
-          <% tabs.each do |tab_name,path| %>
-            <%= tab tab_name,path %>
-          <% end %>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="<%= ResqueWeb::Engine.app.url_helpers.root_path %>"><%= image_tag "resque_web/lifebuoy.png", class: 'logo' %></a>
+        <%= link_to "Resque.", ResqueWeb::Engine.app.url_helpers.root_path, :class => "navbar-brand" %>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav">
+        <% tabs.each do |tab_name,path| %>
+          <%= tab tab_name,path %>
+        <% end %>
         </ul>
       </div>
     </div>

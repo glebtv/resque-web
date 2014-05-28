@@ -1,4 +1,4 @@
-require 'twitter-bootstrap-rails'
+require 'bootstrap-sass'
 require 'jquery-rails'
 
 module ResqueWeb
@@ -11,3 +11,4 @@ module ResqueWeb
     end
   end
 end
+
