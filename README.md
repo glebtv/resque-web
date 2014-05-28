@@ -1,10 +1,7 @@
-resque-web
+resque_web
 ==========
-[![Gem Version](http://img.shields.io/gem/v/resque-web.svg)](https://rubygems.org/gems/resque-web)
-[![Build Status](https://img.shields.io/travis/resque/resque_web/master.svg)](https://travis-ci.org/resque/resque-web)
-[![Dependency Status](https://img.shields.io/gemnasium/resque/resque-web.svg)](https://gemnasium.com/resque/resque-web)
-[![Code Climate](https://img.shields.io/codeclimate/github/resque/resque-web.svg)](https://codeclimate.com/github/resque/resque-web)
-[![Coverage Status](https://img.shields.io/coveralls/resque/resque-web/master.svg)](https://coveralls.io/r/resque/resque-web)
+[![Gem Version](http://img.shields.io/gem/v/glebtv_resque_web.svg)](https://rubygems.org/gems/glevtv_resque_web)
+[![Build Status](https://img.shields.io/travis/glebtv/resque_web/master.svg)](https://travis-ci.org/glebtv/glebtv-resque-web)
 
 A Rails-based frontend to the [Resque](https://github.com/resque/resque) job
 queue system. This provides a similar interface to the existing Sinatra
@@ -27,7 +24,7 @@ Resque web is built as a rails engine.
 Add it to your gemfile.
 
 ```Ruby
-gem 'resque-web', require: 'resque_web'
+gem 'glebtv_resque_web'
 ```
 
 Mount it in your config/routes.rb.
