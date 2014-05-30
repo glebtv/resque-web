@@ -1,22 +1,22 @@
 source 'https://rubygems.org'
 
 gemspec
-gem 'rails', '~> 4.0.3'
-gem "resque", "~> 2.0.0.pre.1", github: "resque/resque"
+gem 'rails', '~> 4.0.0'
+gem "resque", "~> 1.25"
 
 gem 'sqlite3', :platforms => :ruby
 gem 'activerecord-jdbcsqlite3-adapter', :platforms => :jruby
 
 group :development, :test do
-  gem "dotenv-rails"
-  gem "rdoc"
+    gem "dotenv-rails"
+      gem "rdoc"
 end
 
 group :test do
-  gem 'minitest-spec-rails', "~> 4.7.6"
-  gem 'coveralls', :require => false
-  gem 'redcard'
-  gem "mocha", :require => false
+    gem 'minitest-spec-rails', "~> 4.7.6"
+      gem 'coveralls', :require => false
+        gem 'redcard'
+          gem "mocha", :require => false
 end
 
 
@@ -27,10 +27,11 @@ gem 'therubyracer', '~> 0.12.1',    :platforms => :ruby
 gem 'therubyrhino', '2.0.2',        :platforms => :jruby
 
 platforms :rbx do
-  # These are the ruby standard library
-  # dependencies and transitive dependencies.
-  gem 'rubysl', '~> 2.0'
-  gem 'racc'
-  gem 'rubinius-profiler'
-  gem 'rubinius-coverage'
+    # These are the ruby standard library
+  #   # dependencies and transitive dependencies.
+  #     gem 'rubysl', '~> 2.0'
+  #       gem 'racc'
+  #         gem 'rubinius-profiler'
+  #           gem 'rubinius-coverage'
+  #           end
 end

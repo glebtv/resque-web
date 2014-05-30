@@ -7,9 +7,9 @@ module ResqueWeb
 
     def show
       if params[:id] && params[:id] != 'all'
-        @workers = view_context.worker_hosts[params[:id]].map { |id| Resque::WorkerRegistry.find(id) }
+        @workers = view_context.worker_hosts[params[:id]].map { |id| Resque::Worker.find(id) }
       else
-        @workers = Resque::WorkerRegistry.all
+        @workers = Resque.workers
       end
     end
 
